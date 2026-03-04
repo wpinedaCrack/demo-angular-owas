@@ -3,7 +3,7 @@
 
 name: Build and deploy Node.js app to Azure Web App - new-app-service-demo1
 
-on:
+"on":
   push:
     branches:
       - main
@@ -62,4 +62,5 @@ jobs:
           app-name: 'new-app-service-demo1'
           slot-name: 'Production'
           package: .
+
           
