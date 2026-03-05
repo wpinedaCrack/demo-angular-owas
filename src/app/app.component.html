@@ -1,1 +1,20 @@
-<h1>Hola Mundito con WAF 🔐</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba WAF CSP</title>
+</head>
+<body>
+
+<h1 style="color:red;">Hola Mundito con WAF 🔐</h1>
+
+<button onclick="alert('Esto debería ser bloqueado por CSP')">
+    Haz clic
+</button>
+
+<script>
+    console.log("Este script inline debería ser bloqueado por CSP");
+    alert("CSP debería bloquear este script");
+</script>
+
+</body>
+</html>
